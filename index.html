@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="Madam";
+        var str2="";
+        var str1=[];
+        let n=str.length;
+        let i=0;
+        let j=n-1;
+        var sum=0;
+        str=str.toLowerCase();
+        while(i<n&&j>=0){
+            str1[i]=str[j];
+            i++;
+            j--;
+        }
+        for(let k=0;k<n;k++){
+            str2=str2.concat(str1[k]);
+        }
+        for(let l=0;l<n;l++){
+            if(str2[l]==str[l]){
+                sum++;
+            }
+        }
+        if(sum==n){
+            document.write("this is palindrome");
+        }else{
+            document.write("it is not palindrome");
+        }
+    </script>
+</body>
+</html>
